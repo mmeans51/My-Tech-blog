@@ -1,0 +1,3 @@
+DB_USER='root'
+DB_PW='Yourpasswordhere'
+DB_NAME='assess'
