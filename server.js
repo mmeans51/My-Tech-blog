@@ -10,7 +10,7 @@ const sequelize = require("./config/connection");
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
-  secret: 'Shhh....',
+  secret: 'Snitches get stitches',
   cookie: {},
   resave: false,
   saveUninitialized: true,
@@ -35,5 +35,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(require('./controllers/'));
 
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
+  app.listen(PORT, () => console.log('yo, the server is live'));
 });
